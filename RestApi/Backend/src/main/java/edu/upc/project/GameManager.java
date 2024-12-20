@@ -26,7 +26,7 @@ public interface GameManager {
     public List<Item> listItembyType(ElementType type);
 
     public Problema addProblema(Problema problema);
-    public Problema createProblema( String fecha, String titulo, String mensaje, String id);
+    public Problema createProblema( String fecha, String titulo, String mensaje, int id);
 
     public void clear();
 }

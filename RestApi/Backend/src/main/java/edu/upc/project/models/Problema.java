@@ -4,10 +4,10 @@ public class Problema {
     String fecha;
     String titulo;
     String mensaje;
-    String id;
+    int id;
 
-
-    public Problema(String fecha, String titulo, String mensaje, String id) {
+    public Problema(){}
+    public Problema(String fecha, String titulo, String mensaje, int id) {
         this.id = id;
         this.fecha= fecha;
         this.mensaje=mensaje;
@@ -22,7 +22,7 @@ public class Problema {
         return mensaje;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -38,11 +38,16 @@ public class Problema {
         this.mensaje = mensaje;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+    }
+
+    @Override
+    public String toString() {
+        return "User [id=" + id + ", fecha=" + fecha + ", titulo=" + titulo + ", mensaje=" + mensaje +  "]";
     }
 }

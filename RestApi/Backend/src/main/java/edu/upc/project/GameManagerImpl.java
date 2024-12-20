@@ -19,6 +19,7 @@ public class GameManagerImpl implements GameManager {
     private GameManagerImpl() {
         this.store = new LinkedList<>();
         this.users = new LinkedList<>();
+        this.issue = new LinkedList<>();
     }
 
     public static GameManager getInstance() {
@@ -190,7 +191,7 @@ public class GameManagerImpl implements GameManager {
         return problema;
     }
     @Override
-    public Problema createProblema( String fecha, String titulo, String mensaje, String id){
+    public Problema createProblema( String fecha, String titulo, String mensaje, int id){
 
             return this.addProblema(new Problema(fecha, titulo, mensaje, id));
     }
